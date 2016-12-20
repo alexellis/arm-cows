@@ -3,6 +3,6 @@ RUN apk add --update nodejs
 ENTRYPOINT []
 COPY package.json .
 RUN npm i
-COPY index.js .
+COPY app.js .
 EXPOSE 3000
 CMD ["npm", "start"]
